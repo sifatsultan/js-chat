@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+    <title>Test Angular App</title>
+    
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+    
+</head>
+<body>
+    <!-- header nav bar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="#">Angular Chat Demo</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li><a href="#/chat">Chat</a></li>
+                        <li><a href="#/monitor">Monitor</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container main">
+
+        <div class="span10" id='chat-background'>
+            <div class="row">
+                <!-- chat window -->
+                <div class="span6 pull-left" id='chat-window'>
+                    <div class='column-pad'>
+                        
+                        <div id='chat-messages'>
+                            <div class='column-pad'>
+                                <div class='chat-msg'>
+                                    <strong>Me</strong><span class='chat-delim'>: </span><span class='chat-text'>I said...</span>
+                                </div>
+                                <div class='chat-msg'>
+                                    <strong>Person</strong><span class='chat-delim'>: </span><span class='chat-text'>I said... Well, actually I don't really remember what I said, so I'm just gonna type a lot of words and stuff and see what happens.</span>
+                                </div>
+                                <div class='chat-msg'>
+                                    <strong>Me</strong><span class='chat-delim'>: </span><span class='chat-text'>I said...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='pagination-centered' id='chat-submission'>
+                            <div class="input-append">
+                                <input class="span5" id="appendedInputButton" type="text">
+                                <button class="btn btn-primary" type="button"><i class="icon-comment icon-white"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- participant list -->
+                <div class="span3 pull-right" id='participant-list'>
+                    <div class='column-pad'>
+                        <ul>
+                            <li>Person 1</li>
+                            <li>Person 2</li>
+                            <li>Person 2</li>
+                            <li>Person 2</li>
+                            <li>Person 2</li>
+                            <li>Person 2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- bottom state menu for testing -->
+        <div class="navbar navbar-inverse navbar-fixed-bottom">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div class="btn-toolbar" id="state-toolbar">
+                        <button class="btn" rel="tooltip" title="locks the screen"><i class="icon-lock"></i></button>
+                        <button class="btn"><i class="icon-lock"></i></button>
+                        <button class="btn"><i class="icon-lock"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div> <!-- /container -->
+
+</body>
+</html>
