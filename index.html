@@ -39,25 +39,15 @@
                 <!-- chat window -->
                 <div class="span6 pull-left" id='chat-window'>
                     <div class='column-pad'>
-                        
+
                         <div id='chat-messages'>
-                            <div class='column-pad'>
-                                <div class='chat-msg'>
-                                    <strong>Me</strong><span class='chat-delim'>: </span><span class='chat-text'>I said...</span>
-                                </div>
-                                <div class='chat-msg'>
-                                    <strong>Person</strong><span class='chat-delim'>: </span><span class='chat-text'>I said... Well, actually I don't really remember what I said, so I'm just gonna type a lot of words and stuff and see what happens.</span>
-                                </div>
-                                <div class='chat-msg'>
-                                    <strong>Me</strong><span class='chat-delim'>: </span><span class='chat-text'>I said...</span>
-                                </div>
-                            </div>
+                            <ul class='column-pad' id="display"></ul>
                         </div>
                         <div class='pagination-centered' id='chat-submission'>
-                            <div class="input-append">
-                                <input class="span5" id="appendedInputButton" type="text">
-                                <button class="btn btn-primary" type="button"><i class="icon-comment icon-white"></i></button>
-                            </div>
+                            <form class="input-append" action="#">
+                                <input name="name" id="msg" class="span5" type="text">
+                                <button class="btn btn-primary" type="button" onClick="getData();"><i class="icon-comment icon-white"></i></button>
+                            </form>
                         </div>
                     </div>
                 </div>
